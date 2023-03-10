@@ -1,0 +1,39 @@
+#Pricing {
+    margin: 1rem 0;
+    .pricing_container {
+      display: flex;
+      justify-content: space-between;
+    }
+    .card {
+      width: 300px;
+      &:hover {
+        box-shadow: 0 0 15px 2px #777;
+      }
+      .card-header {
+        $color: $prim-c;
+        background-color: $color;
+        color: set-text-c($color, 60);
+      }
+      p {
+        border-bottom: 1px solid lightgray;
+      }
+      .card-footer {
+        display: flex;
+        justify-content: space-evenly;
+      }
+      &:nth-child(2) {
+        .card-header {
+          $color: $success-c;
+          background-color: $color;
+          color: set-text-c($color, 60);
+        }
+      }
+      &:nth-child(3) {
+        .card-header {
+          $color: $danger-c;
+          background-color: $color;
+          color: set-text-c($color, 60);
+        }
+      }
+    }
+  }

@@ -1,0 +1,30 @@
+@function set-text-c($color, $amount) {
+    @if (lightness($color) >$amount) {
+        @return #333;
+    } @else {
+        @return #fff;
+    }
+}
+
+// Responsive
+
+
+// Screen Size
+
+@mixin Responsive($screenSize) {
+    @if $screenSize == $ipad-pro {
+        @media (max-width: $ipad-pro) {
+            @content;
+        }
+    }
+    @if $screenSize == $ipad {
+        @media (max-width: $ipad) {
+            @content;
+        }
+    }
+    @if $screenSize == $phone {
+        @media (max-width: $phone) {
+            @content;
+        }
+    }
+}

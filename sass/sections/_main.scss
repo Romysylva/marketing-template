@@ -1,0 +1,23 @@
+#main {
+    margin-top: 2rem;
+    
+    .main-card.card-img-bg {
+        position: relative;
+        width: 100%;
+        margin: auto;
+        background: url(/images/architectural-design-architecture-blue-sky-buildings-442577.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        border: none;
+        border-radius: 0;
+            .card-body {
+            position: absolute;
+            top: 5%;
+            left: 50%;
+            button {
+                margin-right: 1rem;
+            }
+        }
+    }
+}

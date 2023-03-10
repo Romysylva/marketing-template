@@ -1,0 +1,266 @@
+@import url("https://fonts.googleapis.com/css?family=Lato&display=swap");
+*,
+::before,
+::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  scroll-behavior: smooth;
+}
+
+body {
+  max-width: 1024px;
+  margin: 0 auto;
+  padding: 0 1rem;
+  letter-spacing: 1.2px;
+  font-family: "Lato", sans-serif;
+}
+
+#header {
+  display: flex;
+}
+#header .btn {
+  border: none;
+  box-shadow: none;
+  border-radius: 0;
+  font-weight: bolder;
+  letter-spacing: 1.5px;
+}
+
+#main {
+  margin-top: 2rem;
+}
+#main .main-card.card-img-bg {
+  position: relative;
+  width: 100%;
+  margin: auto;
+  background: url(/images/architectural-design-architecture-blue-sky-buildings-442577.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border: none;
+  border-radius: 0;
+}
+#main .main-card.card-img-bg .card-body {
+  position: absolute;
+  top: 5%;
+  left: 50%;
+}
+#main .main-card.card-img-bg .card-body button {
+  margin-right: 1rem;
+}
+
+#plans {
+  margin: 2rem 0;
+}
+#plans .plans_container {
+  display: flex;
+  justify-content: space-between;
+}
+#plans .card {
+  margin: 1rem;
+}
+#plans .card .btn {
+  margin-bottom: 2rem;
+  letter-spacing: 1.1px;
+}
+#plans .card:nth-child(2) {
+  background-color: #0d7883;
+}
+#plans .card:nth-child(3) {
+  background-color: #084d55;
+}
+#plans .card:nth-child(4) {
+  background-color: #042326;
+}
+
+#Pricing {
+  margin: 1rem 0;
+}
+#Pricing .pricing_container {
+  display: flex;
+  justify-content: space-between;
+}
+#Pricing .card {
+  width: 300px;
+}
+#Pricing .card:hover {
+  box-shadow: 0 0 15px 2px #777;
+}
+#Pricing .card .card-header {
+  background-color: #1177ff;
+  color: #fff;
+}
+#Pricing .card p {
+  border-bottom: 1px solid lightgray;
+}
+#Pricing .card .card-footer {
+  display: flex;
+  justify-content: space-evenly;
+}
+#Pricing .card:nth-child(2) .card-header {
+  background-color: #22aa44;
+  color: #fff;
+}
+#Pricing .card:nth-child(3) .card-header {
+  background-color: #cc3b3b;
+  color: #fff;
+}
+
+#About {
+  margin-top: 1rem;
+}
+#About .main-card {
+  position: relative;
+  width: 100%;
+  margin: auto;
+  border: none;
+  border-radius: 0;
+  box-shadow: 0 0 15px 2px #555;
+  background: url(/images/group-of-people-in-dress-suits-776615.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#About .main-card .card-body {
+  color: #faf9f7;
+  position: absolute;
+  top: 70%;
+  left: 22%;
+  letter-spacing: 2.5px;
+}
+#About .team_container {
+  margin: 2rem 0;
+  display: flex;
+  justify-content: space-between;
+}
+#About .team_container .card {
+  width: 18rem;
+  box-shadow: 0 0 15px 1px rgba(17, 162, 178, 0.2);
+  border: 1px solid #11a2b2;
+}
+
+#footer {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #11a2b2;
+  width: 100%;
+  color: #fff;
+}
+#footer .social {
+  display: flex;
+  justify-content: space-between;
+}
+#footer p {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  letter-spacing: 1.5px;
+}
+#footer .btn-Neon-White {
+  background-color: transparent;
+}
+
+@media (max-width: 768px) {
+  #main .main-card.card-img-bg .card-body {
+    width: 300px;
+    left: 30%;
+  }
+  #main .main-card.card-img-bg .card-body.right {
+    text-align: center;
+  }
+  #main .main-card.card-img-bg .card-body .right {
+    text-align: center;
+  }
+  #main .main-card.card-img-bg .card-body .tm-1 {
+    margin: 0;
+  }
+  #plans {
+    margin: 2rem 0;
+  }
+  #plans .plans_container {
+    flex-wrap: wrap;
+  }
+  #plans .card {
+    max-width: 330px;
+  }
+  #Pricing {
+    margin: 1rem 0;
+  }
+  #Pricing .pricing_container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  #Pricing .card {
+    width: 100%;
+  }
+  #Pricing .card .card-footer {
+    justify-content: space-around;
+    margin: 1rem 0;
+  }
+  #About .team_container {
+    display: flex;
+    flex-direction: column;
+  }
+  #About .team_container .card {
+    width: 100%;
+    margin: 1rem 0;
+  }
+}
+@media (max-width: 500px) {
+  #header a {
+    padding: 0;
+    font-size: 1rem;
+  }
+  body {
+    padding: 0;
+    margin: 0;
+  }
+  #main .main-card.card-img-bg .card-body {
+    width: 200px;
+    left: 20%;
+  }
+  #plans {
+    margin: 2rem 0;
+  }
+  #plans .plans_container {
+    flex-wrap: wrap;
+  }
+  #plans .card {
+    max-width: 95%;
+    margin: 0.5rem auto;
+  }
+  #About {
+    width: 95%;
+    margin: 0 auto;
+  }
+  #About .team_container {
+    display: flex;
+    flex-direction: column;
+  }
+  #About .team_container .card {
+    width: 95%;
+    margin: 1rem auto;
+  }
+  #Pricing {
+    margin: 1rem 0;
+  }
+  #Pricing .pricing_container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  #Pricing .card {
+    width: 95%;
+    margin: 0 auto;
+  }
+  #Pricing .card .card-footer {
+    justify-content: space-around;
+    margin: 1rem 0;
+  }
+}
